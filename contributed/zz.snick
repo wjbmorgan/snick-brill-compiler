@@ -1,0 +1,38 @@
+#proc f(ref int i)
+#	i := i /(0 + i) * 8;
+#end
+proc f(ref float i)
+	i := i /(0 + i) * 8;
+end
+
+proc main ()
+#	int m;
+#	int n;
+#	float x;
+#	float y;
+  int x;
+  int y;
+  float m;
+  float n;
+
+	x := (33+3+(8))/4;
+	y := -5+x;
+
+	while x > 1 do
+		m := y;
+		if m > 0 then
+			write m;
+      write "\n";
+			write n;
+      write "\n";
+			#if x/0 < m then
+			if x/2 < m then
+				f(n);
+			fi
+		else
+			# f(x);
+			f(m);
+		fi
+    x := x - 1;
+	od
+end
